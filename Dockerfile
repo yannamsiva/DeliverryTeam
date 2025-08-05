@@ -8,7 +8,7 @@ EXPOSE 8080
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY target/spring-boot-mysql.jar app.jar
+COPY target/DeliveryTeamDashboard-0.0.1-SNAPSHOT.jar app.jar
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
